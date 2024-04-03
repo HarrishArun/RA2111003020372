@@ -31,12 +31,12 @@ app.get('/categories/:categoryname/products/:productid', async (req, res) => {
   }
 });
 
-// Start the server
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// API Integration Logic
+
 async function fetchProducts(categoryname, n, page, sort) {
   const token = {
     token_type: "Bearer",
